@@ -14,21 +14,21 @@ A tipping calculator is very common in the US (where restaurant tipping is a soc
 python3 tip_calculator.py --bill 86.40 --service good --people 3
 ```
 
-Example output:
+## Live demo
 
-```text
-Bill: $86.40
-Tip (18.0%): $15.55
-Total: $101.95
-Per person (3): $33.98
+```bash
+python3 tip_calculator.py --live-demo
 ```
+
+This runs three sample US-style scenarios (solo diner, date night, and group dinner split).
 
 ### Options
 
-- `--bill` (required): base bill amount
+- `--bill`: base bill amount (required unless `--live-demo` is used)
 - `--service`: `standard`, `good`, `great` (defaults to `standard`)
 - `--tip`: custom tip percentage (overrides `--service`)
 - `--people`: number of people to split across (defaults to `1`)
+- `--live-demo`: prints multiple sample scenarios in one run
 
 ## Run tests
 
